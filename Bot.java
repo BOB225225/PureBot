@@ -83,7 +83,7 @@ public class Bot extends ListenerAdapter {
                             MessageChannel channel = event.getJDA().getTextChannelById("954789778572836936");
                             MessageHistory history = MessageHistory.getHistoryFromBeginning(channel).complete();
                             OffsetDateTime lastMessage = history.getRetrievedHistory().get(1).getTimeCreated();
-                            //if(lastMessage.getDayOfWeek() == now.getDayOfWeek()){
+                           
 
                            
                                 while ((inputLine = in.readLine()) != null)
