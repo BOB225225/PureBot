@@ -161,4 +161,10 @@ $RECYCLE.BIN/
 *.lnk
 
 
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
 # End of https://www.gitignore.io/api/git,java,maven,eclipse,windows
