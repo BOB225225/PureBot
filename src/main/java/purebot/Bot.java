@@ -23,8 +23,10 @@ import java.util.concurrent.TimeUnit;
 public class Bot extends ListenerAdapter {
 
     public static void main(String[] args) throws LoginException {
+        
+        System.out.println("Starting PureBot...");
 
-        JDABuilder.createLight(System.getenv("TOKEN"), GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGES)
+        JDABuilder.createLight(System.getenv().get("TOKEN").toString(), GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGES)
                 .addEventListeners(new Bot())
                 .setActivity(Activity.playing("Purity Vanilla"))
                 .build();
