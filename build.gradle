@@ -42,6 +42,6 @@ build.mustRunAfter test
 
 jar{
     manifest{
-        attributes 'Class-Path':'/libs/PureBot-all.jar', 'Main-Class': 'purebot.PureBot'
+        attributes 'Class-Path':'/libs/PureBot-all.jar', 'Main-Class': 'purebot.Bot'
     }
 }
